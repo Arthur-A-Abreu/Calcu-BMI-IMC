@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./Css/Style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main id="container">
+      <section id="img">
+        <img src="./Images/undraw_personal_trainer_re_cnua.svg" />
+      </section>
+
+      <section id="calculator">
+        <form id="form">
+          <h1 id="title">Calculator - BMI(IMC)</h1>
+
+          <div class="input box">
+            <label for="weight"> Weight in Kg </label>
+            <div class="input-field">
+              <i class="fa-solid fa-weight-hanging"></i>
+              <input type="number" id="weight" required />
+              <span> Kg </span>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="height"> Height in meters </label>
+            <div class="input-field">
+              <i class="fa-solid fa-ruler"></i>
+              <input type="number" step="any" id="height" required />
+              <span> m </span>
+            </div>
+          </div>
+          <button id="calculate">Calculate</button>
+        </form>
+
+        <div id="infos" class="hidden">
+          <div id="result">
+            <div id="bmi">
+              <span id="value"></span>
+              <span>Your BMI</span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+          <div id="more-info">
+            <a href="https://mundoeducacao.uol.com.br/saude-bem-estar">
+              More information about your BMI(IMC)
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./Js/index.js"></script>
+  </body>
+</html>
